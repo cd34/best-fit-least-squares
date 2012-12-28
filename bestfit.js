@@ -18,7 +18,7 @@ function BestFit (x, y) {
   var m = ((sum_xy - ( sum_x * sum_y) / x.length) ) / 
           (sum_xsq - ( sum_x * sum_x) / x.length);
 
-  var y_int = (sum_y / x.length) - (m * (sum_y / x.length));
+  var y_int = (sum_y / x.length) - (m * (sum_x / x.length));
 
   return ([m, y_int]);
 }
